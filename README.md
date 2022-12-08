@@ -1,9 +1,7 @@
-# zipcrack
-![zip](https://user-images.githubusercontent.com/82051128/192567533-5ed56f17-6b59-43c9-8491-b9432cb8a03c.png)
-
+# zipcrack version 2.1
 
 # Installation:
-    1. git clone https://github.com/machine1337/zipcrack.git
+    1. git clone https://github.com/Potrock8/Password-Cracking-Tool.git
     2. cd zipcrack 
     3. python3 -m pip install -r requirements.txt
     
@@ -11,12 +9,11 @@
     1. pyfiglet
     2. termcolor
     3. requests
+    4. pyzipper
+    5. cryptography
     
 # Usage:
     python3 zcrack.py
-    
-# Demo Video:
-https://www.youtube.com/watch?v=miEcCCVI4eM
 
 # Features:
      *: You Can Crack ZIP Password Protected Files Using Below Method:
@@ -25,8 +22,13 @@ https://www.youtube.com/watch?v=miEcCCVI4eM
         
      2) More Features Will Be Added IA:)
         
- 
 # Author:
-    Coded By: Machine404
+    Coded By: Group 2
+    Alegre, Alastair Pearce
+    Cabingan, Kurt Julian
+    Garzo, John Vincent
+    Perez, Sophia Elen
+    Tan, Patrick Elijah
 
-         
+    Originally Coded By: Clay
+    Original Version 2.0 Source Code: https://github.com/machine1337/zipcrack

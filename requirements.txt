@@ -2,3 +2,4 @@ pyfiglet
 requests
 termcolor
 pyzipper
+cryptography
