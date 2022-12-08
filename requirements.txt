@@ -1,3 +1,4 @@
 pyfiglet
 requests
 termcolor
+pyzipper

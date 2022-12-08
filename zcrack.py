@@ -14,6 +14,11 @@ try:
 except ImportError:
     os.system("pip install pyfiglet -q -q -q")
     import pyfiglet
+try:
+    import pyzipper
+except ImportError:
+    os.system("pip install pyzipper -q -q -q")
+    import pyzipper
 
 def header():
     ascii_banner = pyfiglet.figlet_format("{ZIP CRACKER}").upper()
@@ -44,7 +49,7 @@ def linuxpdf():
     with open(pwd_filename, "rb") as passwords:
         passwords_list = passwords.readlines()
         total_passwords = len(passwords_list)
-        my_zip_file = zipfile.ZipFile(zip_filename)
+        my_zip_file = pyzipper.AESZipFile(zip_filename)
         for index, password in enumerate(passwords_list):
             try:
                 my_zip_file.extractall(path="Extracted Folder", pwd=password.strip())
@@ -82,7 +87,7 @@ def winpdf():
     with open(pwd_filename, "rb") as passwords:
         passwords_list = passwords.readlines()
         total_passwords = len(passwords_list)
-        my_zip_file = zipfile.ZipFile(zip_filename)
+        my_zip_file = pyzipper.AESZipFile(zip_filename)
         for index, password in enumerate(passwords_list):
             try:
                 my_zip_file.extractall(path="Extracted Folder", pwd=password.strip())
